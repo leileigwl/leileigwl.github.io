@@ -1,18 +1,3 @@
-/* 图片下的说明文字居中 */
-.jg-caption{
-    text-align: center !important;
-}
-/* 给每个图片下增加个小图标 */
-.jg-caption-visible::before {
-    content: "⊙ ";
-} 
-.fancybox-caption__body::before {
-    content: "⊙ ";
-} 
-.img-alt.is-center::before {
-    content: "⊙ ";
-}
-
 /*哔哩哔哩视频适配*/
 .aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
 .aspect-ratio iframe {
@@ -24,72 +9,164 @@
 }
 
 
+#web_bg {
+    background-image: url('https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png'),
+    linear-gradient(
+      60deg,
+      rgba(255, 165, 150, 0.5) 5%,
+      rgba(0, 228, 255, 0.35)
+    ),
+    url('https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg');
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(247, 149, 51, 0.1) 0,
+      rgba(243, 112, 85, 0.1) 15%,
+      rgba(239, 78, 123, 0.1) 30%,
+      rgba(161, 102, 171, 0.1) 44%,
+      rgba(80, 115, 184, 0.1) 58%,
+      rgba(16, 152, 173, 0.1) 72%,
+      rgba(7, 179, 155, 0.1) 86%,
+      rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(247, 149, 51, 0.1) 0,
+      rgba(243, 112, 85, 0.1) 15%,
+      rgba(239, 78, 123, 0.1) 30%,
+      rgba(161, 102, 171, 0.1) 44%,
+      rgba(80, 115, 184, 0.1) 58%,
+      rgba(16, 152, 173, 0.1) 72%,
+      rgba(7, 179, 155, 0.1) 86%,
+      rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -o-linear-gradient(
+      0deg,
+      rgba(247, 149, 51, 0.1) 0,
+      rgba(243, 112, 85, 0.1) 15%,
+      rgba(239, 78, 123, 0.1) 30%,
+      rgba(161, 102, 171, 0.1) 44%,
+      rgba(80, 115, 184, 0.1) 58%,
+      rgba(16, 152, 173, 0.1) 72%,
+      rgba(7, 179, 155, 0.1) 86%,
+      rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -ms-linear-gradient(
+      0deg,
+      rgba(247, 149, 51, 0.1) 0,
+      rgba(243, 112, 85, 0.1) 15%,
+      rgba(239, 78, 123, 0.1) 30%,
+      rgba(161, 102, 171, 0.1) 44%,
+      rgba(80, 115, 184, 0.1) 58%,
+      rgba(16, 152, 173, 0.1) 72%,
+      rgba(7, 179, 155, 0.1) 86%,
+      rgba(109, 186, 130, 0.1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(247, 149, 51, 0.1) 0,
+      rgba(243, 112, 85, 0.1) 15%,
+      rgba(239, 78, 123, 0.1) 30%,
+      rgba(161, 102, 171, 0.1) 44%,
+      rgba(80, 115, 184, 0.1) 58%,
+      rgba(16, 152, 173, 0.1) 72%,
+      rgba(7, 179, 155, 0.1) 86%,
+      rgba(109, 186, 130, 0.1) 100%
+    );
+  }
 
+/* 右击菜单 */
+#rightMenu {
+    display: none;
+    position: fixed;
+    padding: 0 .25rem;
+    width: 9rem;
+    height: fit-content;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(238, 255, 255, .85);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: #363636;
+    border-radius: 12px;
+    z-index: 99994;
+    border: #e3e8f7;
+    user-select: none;
+    box-shadow: rgba(0, 0, 0, .05);
+}
 
-/* 导航栏居中 */
-#nav-right{
-    flex:1 1 auto;
-    justify-content: flex-end;
-    margin-left: auto;
+#rightMenu a {
+    color: #363636;
+}
+
+#rightMenu .rightMenu-group {
+    padding: .35rem .3rem;
+    transition: .3s
+}
+
+#rightMenu .rightMenu-line {
+    border-top: 1px dashed #4259ef23
+}
+
+#rightMenu .rightMenu-group.rightMenu-small {
     display: flex;
-    flex-wrap:nowrap;
+    justify-content: space-between
 }
 
-/* 子菜单横向布局 */
-.menus_item_child li:not(#sidebar-menus li){
-    float: left;
-    border-radius: 6px!important;
-    -webkit-border-radius: 6px!important;
-    -moz-border-radius: 6px!important;
-    -ms-border-radius: 6px!important;
-    -o-border-radius: 6px!important;
-}
-.menus_item_child:not(#sidebar-menus ul){
-  /*
-    left:calc(-150%)!important;这是估算值，为了保持元素居中的，如果不合适可以自己调
-  改为：*/
-  left:50%;
-  translate:-50%;
-}
-
-
-/* 网站标题部分的增强版 */
-#site-name::before{
-    opacity: 0;
-    background-color: var(--lyx-theme)!important;
+#rightMenu .rightMenu-group .rightMenu-item {
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
     transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    position:absolute;
-    top:0!important;
-    right:0!important;
-    width:100%;
-    height:100%;
-    content: "\f015";
-    box-shadow: 0 0 5px var(--lyx-theme);
-    font-family: "Font Awesome 6 Free";
+    cursor: pointer
+}
+
+#rightMenu .rightMenu-line .rightMenu-item {
+    margin: .25rem 0;
+    padding: .25rem 0
+}
+
+#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {
+    display: flex
+}
+
+#rightMenu .rightMenu-group .rightMenu-item:hover {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
+#rightMenu .rightMenu-group .rightMenu-item:active {
+    transform: scale(.97)
+}
+
+#rightMenu .rightMenu-group .rightMenu-item i {
+    display: inline-block;
     text-align: center;
-    color:white;
-    line-height:34px;/*如果有溢出或者垂直不居中的现象微调一下这个参数*/
-    font-size: 18px;/*根据个人喜好*/
-}
-#site-name:hover::before{
-    opacity: 1;
-    scale:1.03;
-}
-#site-name{
-    position: relative;
-    font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
-}
-:root{
-    --lyx-theme:#ed709b /*我的主题色*/
+    line-height: 1.5rem;
+    width: 1.5rem;
+    padding: 0 .25rem
 }
 
+#rightMenu .rightMenu-line .rightMenu-item i {
+    margin: 0 .25rem
+}
 
+#rightMenu .rightMenu-group .rightMenu-item span {
+    line-height: 1.5rem
+}
+
+.rightMenu-small .rightMenu-item {
+    width: 30px;
+    height: 30px;
+    line-height: 30px
+}
+
+#rightmenu-mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: 0 0;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 101;
+    margin: 0 !important;
+    z-index: 99993
+}
