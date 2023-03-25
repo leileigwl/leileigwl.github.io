@@ -158,3 +158,11 @@
     --zhshier-black-acrylic1: #0008;
     --zhshier-white-acrylic1:#fffd;
 }
+
+
+
+/* 加载时候小动画 */
+.loading-img {
+    background: url(http://101.34.32.235:9124/i/2023/03/25/641e925462115.jpg) no-repeat center center;
+    background-size: cover;
+  }
