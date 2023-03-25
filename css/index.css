@@ -1538,6 +1538,12 @@ img:not([src]) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
+img[data-lazy-src]:not(.loaded) {
+  filter: blur(8px) brightness(1);
+}
+img[data-lazy-src].error {
+  filter: none;
+}
 .img-alt {
   margin: -10px 0 10px;
   color: #858585;
@@ -3699,7 +3705,7 @@ h1.page-title + .tag-cloud-list {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: var(--anzhiyu-card-bg);
+  background: #fff;
   z-index: 1001;
   opacity: 1;
   -ms-filter: none;
@@ -5589,7 +5595,7 @@ blockquote.pullquote.right {
   filter: brightness(0.8);
 }
 [data-theme='dark'] img {
-  filter: brightness(0.8);
+  filter: blur(0) brightness(0.8);
 }
 [data-theme='dark'] #aside-content .aside-list > .aside-list-item:not(:last-child) {
   border-bottom: 1px dashed rgba(255,255,255,0.1);
