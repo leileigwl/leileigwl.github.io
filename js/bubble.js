@@ -1,1 +1,74 @@
-!function(){var a,n,e,t,o,h=!0;function i(){if(h)for(var a in n.clearRect(0,0,e,t),o)o[a].draw();requestAnimationFrame(i)}function r(){e=window.innerWidth,t=window.innerHeight,a.width=e,a.height=t}function c(){var a=this;function o(){a.pos.x=Math.random()*e,a.pos.y=t+100*Math.random(),a.alpha=.1+.5*Math.random(),a.alpha_change=2e-4+1e-4*Math.random(),a.scale=.2+.5*Math.random(),a.scale_change=.002*Math.random(),a.speed=.1+1*Math.random()}a.pos={},o(),this.draw=function(){a.alpha<=0&&o(),a.pos.y-=a.speed,a.alpha-=a.alpha_change,a.scale+=a.scale_change,n.beginPath(),n.arc(a.pos.x,a.pos.y,10*a.scale,0,2*Math.PI,!1),n.fillStyle="rgba(255,255,255,"+a.alpha+")",n.fill()}}!function(){a=document.getElementById("bubble_canvas"),r(),n=a.getContext("2d"),o=[];for(var t=.04*e,h=0;h<t;h++){var d=new c;o.push(d)}i()}(),window.onresize=function(){r()}}();
+(function () {
+    var canvas, ctx, width, height, bubbles, animateHeader = true;
+    initHeader();
+
+    function initHeader() {
+        canvas = document.getElementById('bubble_canvas');
+        window_resize();
+        ctx = canvas.getContext('2d');
+        //建立泡泡
+        bubbles = [];
+        var num = width * 0.04; //气泡数量
+        for (var i = 0; i < num; i++) {
+            var c = new Bubble();
+            bubbles.push(c);
+        }
+        animate();
+    }
+
+    function animate() {
+        if (animateHeader) {
+            ctx.clearRect(0, 0, width, height);
+            for (var i in bubbles) {
+                bubbles[i].draw();
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+
+    function window_resize() {
+        //canvas铺满窗口
+        width = window.innerWidth;
+        height = window.innerHeight;
+        //如果需要铺满内容可以换下面这个
+        //var panel = document.getElementById('thumbnail_canvas');
+        //width=panel.offsetWidth;
+        //height=panel.offsetHeight;
+        canvas.width = width;
+        canvas.height = height;
+    }
+    window.onresize = function () {
+        window_resize();
+    }
+
+    function Bubble() {
+        var _this = this;
+        (function () {
+            _this.pos = {};
+            init();
+        })();
+
+        function init() {
+            _this.pos.x = Math.random() * width;
+            _this.pos.y = height + Math.random() * 100;
+            _this.alpha = 0.1 + Math.random() * 0.5; //气泡透明度
+            _this.alpha_change = 0.0002 + Math.random() * 0.0001; //气泡透明度变化速度
+            _this.scale = 0.2 + Math.random() * 0.5; //气泡大小
+            _this.scale_change = Math.random() * 0.002; //气泡大小变化速度
+            _this.speed = 0.1 + Math.random() * 1; //气泡上升速度
+        }
+        //气泡
+        this.draw = function () {
+            if (_this.alpha <= 0) {
+                init();
+            }
+            _this.pos.y -= _this.speed;
+            _this.alpha -= _this.alpha_change;
+            _this.scale += _this.scale_change;
+            ctx.beginPath();
+            ctx.arc(_this.pos.x, _this.pos.y, _this.scale * 10, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'rgba(255,255,255,' + _this.alpha + ')';
+            ctx.fill();
+        };
+    }
+})();

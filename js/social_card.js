@@ -1,1 +1,12 @@
-var zhsher={getTimeState:function(){var e=(new Date).getHours(),t="";return 0<=e&&e<=5?t="晚安😴":5<e&&e<=10?t="早上好👋":10<e&&e<=14?t="中午好👋":14<e&&e<=18?t="下午好👋":18<e&&e<=24&&(t="晚上好👋"),t},sayhi:function(){var e=document.getElementById("author-info__sayhi");e&&(e.innerHTML=zhsher.getTimeState()+"！我是")}};zhsher.sayhi();
+var zhsher = {
+    getTimeState: function () {
+        var element = (new Date).getHours(), time = "";
+        return 0 <= element && element <= 5 ? time = "晚安😴" : 5 < element && element <= 10 ? time = "早上好👋" : 10 < element && element <= 14 ? time = "中午好👋" : 14 < element && element <= 18 ? time = "下午好👋" : 18 < element && element <= 24 && (time = "晚上好👋"), time
+    },
+    sayhi: function () {
+        var element = document.getElementById("author-info__sayhi");
+        element && (element.innerHTML = zhsher.getTimeState() + "！我是")
+    }
+}
+zhsher.sayhi();
+
