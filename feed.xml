@@ -9,8 +9,35 @@
     <atom:link href="https://leileigwl.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>小白小白·~</description>
-    <pubDate>Mon, 04 Dec 2023 11:20:28 GMT</pubDate>
+    <pubDate>Mon, 04 Dec 2023 12:34:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2023.12.4</title>
+      <link>https://leileigwl.github.io/post/e52bac39.html</link>
+      <guid>https://leileigwl.github.io/post/e52bac39.html</guid>
+      <pubDate>Mon, 04 Dec 2023 12:10:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;2023-12-4&quot;&gt;&lt;a href=&quot;#2023-12-4&quot; class=&quot;headerlink&quot; title=&quot;2023.12.4&quot;&gt;&lt;/a&gt;2023.12.4&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;今天是日记第一篇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="2023-12-4"><a href="#2023-12-4" class="headerlink" title="2023.12.4"></a>2023.12.4</h3><blockquote><p>今天是日记第一篇</p></blockquote><p>从今天起，把自己的小博客重新搭建完成，并进行每天的日记记录，以此鞭策同时监督自己·</p><p>博客内容以每日的生活，所做的事为主，主打一个记录生活</p><hr><p>完成的事：</p><ul><li><p>重新整理了一下博客内容</p></li><li><p>七牛云正常使用·顺便上传张图测试一下·</p><p><img src="http://img.210214.xyz/blog/wallhaven-rrjvyq.png" alt="wallhaven-rrjvyq"></p></li><li><p>开始顺利慢慢进入六级状态</p></li><li><p>最后今天还需要把代码完成一下</p></li><li><p>然后去跑一跑2km</p></li></ul>]]></content:encoded>
+      
+      
+      
+      <category domain="https://leileigwl.github.io/tags/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <comments>https://leileigwl.github.io/post/e52bac39.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>python解码</title>
@@ -55,9 +82,9 @@
       
       
       
-      <category domain="https://leileigwl.github.io/tags/%E9%80%86%E5%90%91/">逆向</category>
-      
       <category domain="https://leileigwl.github.io/tags/js/">js</category>
+      
+      <category domain="https://leileigwl.github.io/tags/%E9%80%86%E5%90%91/">逆向</category>
       
       
       <comments>https://leileigwl.github.io/post/7f0ece4d.html#disqus_thread</comments>
@@ -107,11 +134,11 @@
       
       
       
-      <category domain="https://leileigwl.github.io/tags/%E9%80%86%E5%90%91/">逆向</category>
-      
       <category domain="https://leileigwl.github.io/tags/js/">js</category>
       
       <category domain="https://leileigwl.github.io/tags/v8/">v8</category>
+      
+      <category domain="https://leileigwl.github.io/tags/%E9%80%86%E5%90%91/">逆向</category>
       
       
       <comments>https://leileigwl.github.io/post/aebf9b8c.html#disqus_thread</comments>
@@ -247,32 +274,6 @@
       
       
       <comments>https://leileigwl.github.io/post/cbd51dd8.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>python经典书籍</title>
-      <link>https://leileigwl.github.io/post/16fc56f8.html</link>
-      <guid>https://leileigwl.github.io/post/16fc56f8.html</guid>
-      <pubDate>Wed, 12 Apr 2023 00:17:35 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;Python参考书籍&quot;&gt;&lt;a href=&quot;#Python参考书籍&quot; class=&quot;headerlink&quot; title=&quot;Python参考书籍&quot;&gt;&lt;/a&gt;Python参考书籍&lt;/h2&gt;&lt;h3 id=&quot;入门读物&quot;&gt;&lt;a href=&quot;#入门读物&quot; class=&quot;head</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="Python参考书籍"><a href="#Python参考书籍" class="headerlink" title="Python参考书籍"></a>Python参考书籍</h2><h3 id="入门读物"><a href="#入门读物" class="headerlink" title="入门读物"></a>入门读物</h3><ol><li>《Python基础教程》（<em>Beginning Python From Novice to Professional</em>）</li><li>《Python学习手册》（<em>Learning Python</em>）</li><li>《Python编程》（<em>Programming Python</em>）</li><li>《Python Cookbook》</li><li>《Python程序设计》（<em>Python Programming: An Introduction to Computer Science</em>）</li><li>《Modern Python Cookbook》</li></ol><h3 id="进阶读物"><a href="#进阶读物" class="headerlink" title="进阶读物"></a>进阶读物</h3><ol><li>《Python核心编程》（<em>Core Python Applications Programming</em>）</li><li>《流畅的Python》（<em>Fluent Python</em>）</li><li>《Effective Python：编写高质量Python代码的59个有效方法》（<em>Effective Python 59 Specific Ways to Write Better Python</em>）</li><li>《Python设计模式》（<em>Learning Python Design Patterns</em>）</li><li>《Python高级编程》（<em>Expert Python Programming</em>）</li><li>《Python性能分析与优化》（<em>Mastering Python High Performance</em>）</li></ol><h3 id="Web框架"><a href="#Web框架" class="headerlink" title="Web框架"></a>Web框架</h3><ol><li>《Django基础教程》（<em>Tango with Django</em>）</li><li>《轻量级Django》（<em>Lightweight Django</em>）</li><li>《Python Web开发：测试驱动方法》（<em>Test-Driven Development with Python</em>）</li><li>《Web Development with Django Cookbook》</li><li>《Test-Driven Development with Django》</li><li>《Django Project Blueprints 》</li><li>《Flask Web开发：基于Python的Web应用开发实战》（<em>Flask Web Development: Developing Web Applications with Python</em>）</li><li>《深入理解Flask》（<em>Mastering Flask</em>）</li></ol><h3 id="爬虫开发"><a href="#爬虫开发" class="headerlink" title="爬虫开发"></a>爬虫开发</h3><ol><li>《用Python写网络爬虫》（<em>Web Scraping with Python</em>）</li><li>《精通Python爬虫框架Scrapy》（<em>Learning Scrapy</em>）</li><li>《Python网络数据采集》（<em>Web Scraping with Python</em>）</li><li>《Python爬虫开发与项目实战》</li><li>《Python 3网络爬虫开发实战》</li></ol><h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><ol><li>《利用Python进行数据分析》（<em>Python for Data Analysis</em>）</li><li>《Python数据科学手册》（<em>Python Data Science Handbook</em>）</li><li>《Python金融大数据分析》（<em>Python for Finance</em>）</li><li>《Python数据可视化编程实战》（<em>Python Data Visualization Cookbook</em>）</li><li>《Python数据处理》（<em>Data Wrangling with Python</em>）</li></ol><h3 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h3><ol><li>《Python机器学习基础教程》（<em>Introduction to Machine Learning with Python</em>）</li><li>《Python机器学习实践指南》（<em>Python Machine Learning Blueprints</em>）</li><li>《Python Machine Learning Case Studies》</li><li>《Python机器学习实践：测试驱动的开发方法》（<em>Thoughtful Machine Learning with Python A Test Driven Approach</em>）</li><li>《Python机器学习经典实例》（<em>Python Machine Learning Cookbook</em>）</li><li>《TensorFlow：实战Google深度学习框架》</li></ol>]]></content:encoded>
-      
-      
-      
-      <category domain="https://leileigwl.github.io/tags/python/">python</category>
-      
-      <category domain="https://leileigwl.github.io/tags/%E4%B9%A6%E7%B1%8D/">书籍</category>
-      
-      
-      <comments>https://leileigwl.github.io/post/16fc56f8.html#disqus_thread</comments>
       
     </item>
     
