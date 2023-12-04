@@ -9,8 +9,34 @@
     <atom:link href="https://leileigwl.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>小白小白·~</description>
-    <pubDate>Sun, 14 May 2023 06:50:59 GMT</pubDate>
+    <pubDate>Mon, 04 Dec 2023 11:20:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>python解码</title>
+      <link>https://leileigwl.github.io/post/ef700de4.html</link>
+      <guid>https://leileigwl.github.io/post/ef700de4.html</guid>
+      <pubDate>Sun, 14 May 2023 08:21:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;python-解码&quot;&gt;&lt;a href=&quot;#python-解码&quot; class=&quot;headerlink&quot; title=&quot;python 解码&quot;&gt;&lt;/a&gt;python 解码&lt;/h2&gt;&lt;h3 id=&quot;request-请求&quot;&gt;&lt;a href=&quot;#request-请求&quot; cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="python-解码"><a href="#python-解码" class="headerlink" title="python 解码"></a>python 解码</h2><h3 id="request-请求"><a href="#request-请求" class="headerlink" title="request 请求"></a>request 请求</h3><p>原理：</p><ul><li><p>字符串在Python内部的表示是<strong>unicode</strong>编码，需要unicode编码作为中间件</p><ul><li>eg、response 请求后得到的结果的编码，运行到python程序中首先是<code>unicode</code>编码，先用response.text.encode去加载原本再网页中的编码，然后再将这个网页里使用的编码进行decode(‘utf8’)就可以正常的显示了</li></ul></li><li><p>encode 用于在python程序中，unicode 对其他编码的处理，将python程序中的unicode编码encode得到常见的编码，想要输出的话还是要转成utf8 ，这就要用到decode函数了</p></li><li><p>decode函数是用于 常见编码转换成unicode编码的一种方式</p></li></ul><p>通用解码： </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">response.text.encode(response.encoding).decode(<span class="string">&#x27;utf-8&#x27;</span>) </span><br><span class="line"><span class="comment">#response.encoding为原来的编码格式，encode后编码为原来的格式，decode后解码为‘utf-8’</span></span><br><span class="line">response.encoding= <span class="string">&#x27;utf8&#x27;</span> <span class="comment">#将encoding直接转换成utf8</span></span><br><span class="line">response.content.decode(<span class="string">&#x27;utf8&#x27;</span>) <span class="comment">#二进制内容转换成utf8</span></span><br></pre></td></tr></table></figure><p><img src="https://pic.210214.xyz//random/image-20230514160231034.png" alt="image-20230514160231034"></p><h3 id="文件读写操作codecs-open"><a href="#文件读写操作codecs-open" class="headerlink" title="文件读写操作codecs.open"></a>文件读写操作codecs.open</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line">     <span class="keyword">with</span> codecs.<span class="built_in">open</span>(‘....txt’,’w’,’utf-<span class="number">8</span>’) <span class="keyword">as</span> f:</span><br><span class="line">     f.write(...)</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      
+      <category domain="https://leileigwl.github.io/tags/python/">python</category>
+      
+      <category domain="https://leileigwl.github.io/tags/%E7%BC%96%E7%A0%81/">编码</category>
+      
+      
+      <comments>https://leileigwl.github.io/post/ef700de4.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js逆向关键词</title>
@@ -247,30 +273,6 @@
       
       
       <comments>https://leileigwl.github.io/post/16fc56f8.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>代理ip测速</title>
-      <link>https://leileigwl.github.io/post/ae4f18a7.html</link>
-      <guid>https://leileigwl.github.io/post/ae4f18a7.html</guid>
-      <pubDate>Tue, 11 Apr 2023 11:28:38 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h3 id=&quot;SPEEDTEST-https-www-speedtest-net&quot;&gt;&lt;a href=&quot;#SPEEDTEST-https-www-speedtest-net&quot; class=&quot;headerlink&quot; title=&quot;SPEEDTEST : https://www.sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h3 id="SPEEDTEST-https-www-speedtest-net"><a href="#SPEEDTEST-https-www-speedtest-net" class="headerlink" title="SPEEDTEST : https://www.speedtest.net/"></a>SPEEDTEST : <a href="https://www.speedtest.net/">https://www.speedtest.net/</a></h3><ul><li><p>请务必认准 .net 域名，不要使用 .cn 域名的来测试。</p></li><li><p>请确认网页上显示的测试服务器的位置在中国大陆以外。如果仍显示国内地址，请开启全局代理模式。</p></li><li><p>点击网页上的 GO 来进行测试。</p></li><li><p>我自己常用的是无广告版本的站点：</p><p>① <a href="http://mybroadbandspeed.speedtestcustom.com/">http://mybroadbandspeed.speedtestcustom.com/</a></p><p>② <a href="http://aaaaaa.speedtestcustom.com/">http://aaaaaa.speedtestcustom.com/</a></p><p>③ <a href="http://rixcloud.speedtestcustom.com/">http://rixcloud.speedtestcustom.com/</a></p><p>④ <a href="http://cordcloud.speedtestcustom.com/">http://cordcloud.speedtestcustom.com/</a></p></li></ul>]]></content:encoded>
-      
-      
-      
-      <category domain="https://leileigwl.github.io/tags/speedtest/">speedtest</category>
-      
-      
-      <comments>https://leileigwl.github.io/post/ae4f18a7.html#disqus_thread</comments>
       
     </item>
     
