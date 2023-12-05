@@ -9,8 +9,36 @@
     <atom:link href="https://leileigwl.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>小白小白·~</description>
-    <pubDate>Mon, 04 Dec 2023 14:26:55 GMT</pubDate>
+    <pubDate>Tue, 05 Dec 2023 15:47:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2023.12.5</title>
+      <link>https://leileigwl.github.io/post/922c9caf.html</link>
+      <guid>https://leileigwl.github.io/post/922c9caf.html</guid>
+      <pubDate>Tue, 05 Dec 2023 04:11:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;2023-12-5&quot;&gt;&lt;a href=&quot;#2023-12-5&quot; class=&quot;headerlink&quot; title=&quot;2023.12.5&quot;&gt;&lt;/a&gt;2023.12.5&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;第二篇记录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="2023-12-5"><a href="#2023-12-5" class="headerlink" title="2023.12.5"></a>2023.12.5</h3><blockquote><p>第二篇记录</p></blockquote><ol><li><p>接到了一个网易图片下载的单子，但是奈何里面出现的图片使用html2canvas无法下载，到嘴的鸭子跑飞咯</p></li><li><p>今天必须写完那拖的两篇代码，再不写就要给人家违约了</p></li><li><p>呀，获奖啦，去年一个奖项没有，今年好容易争气了，运气也算不错，本来以为就二等奖的，开心的</p><p><img src="/./assets/image-20231205190551135-1701774433919-1.png"></p></li><li><p>写了6级，正确率还不错</p></li><li><p>讨厌，今天被小朋友吓到了，给我发恐怖视频</p></li><li><p>马上写好今天的课堂总结睡觉</p></li></ol>]]></content:encoded>
+      
+      
+      
+      <category domain="https://leileigwl.github.io/tags/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <comments>https://leileigwl.github.io/post/922c9caf.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023.12.4</title>
@@ -248,32 +276,6 @@
       
       
       <comments>https://leileigwl.github.io/post/d723e266.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>charles 配置</title>
-      <link>https://leileigwl.github.io/post/cbd51dd8.html</link>
-      <guid>https://leileigwl.github.io/post/cbd51dd8.html</guid>
-      <pubDate>Wed, 12 Apr 2023 08:28:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;charles-配置&quot;&gt;&lt;a href=&quot;#charles-配置&quot; class=&quot;headerlink&quot; title=&quot;charles 配置&quot;&gt;&lt;/a&gt;charles 配置&lt;/h2&gt;&lt;p&gt;之前文章讲的数据包主要是http协议，大家可以看到数据包并直接显示具体详细的</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="charles-配置"><a href="#charles-配置" class="headerlink" title="charles 配置"></a>charles 配置</h2><p>之前文章讲的数据包主要是http协议，大家可以看到数据包并直接显示具体详细的内容：</p><p><img src="https://pic2.zhimg.com/80/v2-ef77bf2e12263382c3dfc119b419d01d_720w.webp" alt="img"></p><p>但是如果抓到的是https的报文，是没有办法直接显示的，你将看到的是乱码：</p><p><img src="https://pic3.zhimg.com/80/v2-3fdb7d3a46112fb29b5600ed460b1792_720w.webp" alt="img"></p><p>那怎么抓取https的数据报文并正常显示报文内容信息呢？</p><p><strong>第一步：安装证书</strong></p><p>如果需要抓取并分析 Https 协议的数据报文，需要先安装 Charles 的 CA 证书。具体步骤如下：</p><p>1、点击 Charles 的顶部菜单，选择 “Help” –&gt; “SSL Proxying” –&gt; “Install Charles Root Certificate”</p><p>然后输入系统的帐号密码，即可在 KeyChain 看到添加好的证书。如下图所示：</p><p><img src="https://pic2.zhimg.com/80/v2-906257dfd73f56f1c2b9576e75a07b69_720w.webp" alt="img"></p><p><strong>第二步：安装浏览器证书</strong></p><p><img src="https://pic4.zhimg.com/80/v2-0a9a7441348ae30d537445664c1200d7_720w.webp" alt="img"></p><p><img src="https://pic4.zhimg.com/80/v2-0698aa91cd16909e2781f93cccae66a7_720w.webp" alt="img"></p><p>根据提示信息，需要先下载证书，再安装到浏览器中。</p><p>所以，在浏览器地址栏输入“chls.pro&#x2F;ssl”地址去下载证书，得到的证书如下：</p><p><img src="https://pic2.zhimg.com/80/v2-5d19e72791dd888621cb99887ba753b5_720w.webp" alt="img"></p><p>然后在浏览器中安装这个下载好的证书，此处以chrome为例：</p><p><img src="https://pic3.zhimg.com/80/v2-a8dc0df465574ca8043966019008cf92_720w.webp" alt="img"></p><h3 id="第三步：开启SSL-代理"><a href="#第三步：开启SSL-代理" class="headerlink" title="第三步：开启SSL 代理"></a><strong>第三步：开启SSL 代理</strong></h3><p>点击【Proxy】—&gt; 【SSL proxying Settings】可以打开如下对话框：</p><p><img src="https://pic3.zhimg.com/80/v2-713a3eb5e597304d87d5d719b5eb9986_720w.webp" alt="img"></p><p>勾选“Enable SSL Proxying”，并在Include区域点击“Add”新建地址，在Host和Port区域填上“*”，表示匹配所有，那么就可以抓取所有的https数据报文。</p>]]></content:encoded>
-      
-      
-      
-      <category domain="https://leileigwl.github.io/tags/%E9%85%8D%E7%BD%AE/">配置</category>
-      
-      <category domain="https://leileigwl.github.io/tags/%E7%88%AC%E8%99%AB/">爬虫</category>
-      
-      
-      <comments>https://leileigwl.github.io/post/cbd51dd8.html#disqus_thread</comments>
       
     </item>
     
