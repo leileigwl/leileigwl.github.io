@@ -9,8 +9,35 @@
     <atom:link href="https://leileigwl.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>小白小白·~</description>
-    <pubDate>Tue, 05 Dec 2023 15:51:21 GMT</pubDate>
+    <pubDate>Wed, 06 Dec 2023 15:16:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2023.12.6</title>
+      <link>https://leileigwl.github.io/post/b25cd15.html</link>
+      <guid>https://leileigwl.github.io/post/b25cd15.html</guid>
+      <pubDate>Wed, 06 Dec 2023 14:56:11 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h4 id=&quot;2023-12-6&quot;&gt;&lt;a href=&quot;#2023-12-6&quot; class=&quot;headerlink&quot; title=&quot;2023.12.6&quot;&gt;&lt;/a&gt;2023.12.6&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;今天终于把两代码写完了哦·憋死我了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h4 id="2023-12-6"><a href="#2023-12-6" class="headerlink" title="2023.12.6"></a>2023.12.6</h4><ul><li><p>今天终于把两代码写完了哦·憋死我了</p></li><li><p>感冒还是没痊愈，吃了头孢，略微犯困</p></li><li><p>今天收到了大螃海，还不知道怎么吃</p><p><img src="https://img.210214.xyz/blog/7c46745c77f6097fa411dc4d5425994.jpg"></p></li><li><p>六级断掉了，还没做，明天有时间，好好写吧</p></li><li><p>一旦有时间记得把新的大作业写了吧，早点结束</p></li></ul><hr><ul><li><input checked="" disabled="" type="checkbox"> 今天任务总体完成</li></ul>]]></content:encoded>
+      
+      
+      
+      <category domain="https://leileigwl.github.io/tags/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <comments>https://leileigwl.github.io/post/b25cd15.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023.12.5</title>
@@ -250,32 +277,6 @@
       
       
       <comments>https://leileigwl.github.io/post/5c006507.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>docker 配置</title>
-      <link>https://leileigwl.github.io/post/d723e266.html</link>
-      <guid>https://leileigwl.github.io/post/d723e266.html</guid>
-      <pubDate>Mon, 08 May 2023 08:32:43 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;docker&quot;&gt;&lt;a href=&quot;#docker&quot; class=&quot;headerlink&quot; title=&quot;docker&quot;&gt;&lt;/a&gt;docker&lt;/h2&gt;&lt;h3 id=&quot;docker设置开机自动重启并重新运行容器&quot;&gt;&lt;a href=&quot;#docker设置开机自动重启并重</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h2><h3 id="docker设置开机自动重启并重新运行容器"><a href="#docker设置开机自动重启并重新运行容器" class="headerlink" title="docker设置开机自动重启并重新运行容器"></a>docker设置开机自动重启并重新运行容器</h3><ul><li><p>设置docker服务自动重启：</p><ul><li><pre><code class="shell">systemctl enable docker.service<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- docker容器时可以加如下参数来保证每次docker服务重启后容器也自动重启</span><br><span class="line"></span><br><span class="line">  - ```shell</span><br><span class="line">    docker run --restart=always</span><br></pre></td></tr></table></figure></code></pre></li></ul></li><li><p>如果已经启动了</p><ul><li><pre><code class="shell">docker update --restart=always<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 重要的restart参数</span><br><span class="line"></span><br><span class="line">  - no - 容器退出时，不重启容器；</span><br><span class="line">  - on-failure - 只有在非0状态退出时才从新启动容器；如果容器由于错误而退出，则将其重新启动，非零退出代码表示错误</span><br><span class="line">  - unless-stopped - 重新启动容器，除非明确停止容器或者 Docker 被停止或重新启动</span><br><span class="line">  - always -只要容器停止了，就重新启动</span><br><span class="line"></span><br><span class="line">### docker-compose 启动</span><br><span class="line"></span><br><span class="line">#### 启动命令</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line">sudo docker-compose up -d #前提需要有docker-compose.yml 文件</span><br></pre></td></tr></table></figure></code></pre></li></ul></li></ul><h3 id="docker镜像源设置"><a href="#docker镜像源设置" class="headerlink" title="docker镜像源设置"></a>docker镜像源设置</h3><h4 id="1-修改配置文件"><a href="#1-修改配置文件" class="headerlink" title="1.修改配置文件"></a>1.修改配置文件</h4><ul><li>创建或修改 &#x2F;etc&#x2F;docker&#x2F;daemon.json 文件，修改为如下形式</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;registry-mirrors&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>,</span><br><span class="line">        <span class="string">&quot;http://hub-mirror.c.163.com&quot;</span>,</span><br><span class="line">        <span class="string">&quot;https://registry.docker-cn.com&quot;</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="2-加载重启docker"><a href="#2-加载重启docker" class="headerlink" title="2.加载重启docker"></a>2.加载重启docker</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service docker restart</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      
-      <category domain="https://leileigwl.github.io/tags/%E9%85%8D%E7%BD%AE/">配置</category>
-      
-      <category domain="https://leileigwl.github.io/tags/docker/">docker</category>
-      
-      
-      <comments>https://leileigwl.github.io/post/d723e266.html#disqus_thread</comments>
       
     </item>
     
